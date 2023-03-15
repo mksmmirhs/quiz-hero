@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Blog</title>
   </head>
   <body>
@@ -13,22 +14,61 @@
     </p>
     <ul>
       <li>
-        map: it loops through each element of the array and modifies each
-        element according to the logic given on callback function and returns
-        the result as an array.
+        <strong>map:</strong> it loops through each element of the array and
+        modifies each element according to the logic given on callback function
+        and returns the result as an array.
       </li>
       <li>
-        filter: it loops through all the element of an array and return elements
-        as an array by checking the condition pass through callback function.
+        <strong>filter:</strong> it loops through all the element of an array
+        and return elements as an array by checking the condition pass through
+        callback function.
       </li>
       <li>
-        forEach: it loops through each element of an array according to the
-        callback function but do not returns the result
+        <strong>forEach:</strong> it loops through each element of an array
+        according to the callback function but do not returns the result
       </li>
       <li>
-        find: find method loops though array and returns the first element
-        matching the condition of callback function.
+        <strong>find:</strong> find method loops though array and returns the
+        first element matching the condition of callback function.
       </li>
     </ul>
+    <h1>
+      2.What is the difference between localStorage, sessionStorage, cookies?
+    </h1>
+    <ul>
+      <li>
+        <strong>localStorage:</strong> localStorage stores the data in the
+        browser but it preserves the data even after browser close or session
+        end.
+      </li>
+      <li>
+        <strong>sessionStorage:</strong> sessionStorage stores the data
+        available to a particular session. this means data vanishes after
+        browser window close or session end.
+      </li>
+      <li>
+        <strong>cookies:</strong> this is small file saved in users devise by
+        websites. it preserves the file even after browser close. this data can
+        be access by server and the user sets the cookies expiration date.
+      </li>
+    </ul>
+    <h1>3. How does the event loop works?</h1>
+    <p>
+      <strong>Ans:</strong> Javascript is a single threaded language. To run
+      asynchronous task whether not blocking the execution event loop kicks in.
+      When asynchronous tasks comes it removes from call stack to event loop
+      removes it from call stack to callback queue. then it waits to finish the
+      asynchronous task. then the task is finish event loop check if the call
+      stack is free or not. if the call stack is free event loop removes the
+      task from queue and push it to call stack. This is how javascript deals
+      with asynchronous task in a single thread non blocking way.
+    </p>
+    <h1>4. What is the purpose of quizTimer function</h1>
+    <p>
+      <strong>Ans:</strong> After clicking the quiz start button quiz timer
+      function gets activated. it counts the time needed to finish the quiz. it
+      converts the milliseconds setinterval function to second and minutes and
+      shows to ui.
+    </p>
   </body>
 </html>
