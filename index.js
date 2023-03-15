@@ -9,10 +9,10 @@ let startQuiz = document.querySelector('#startQuiz');
 let rulesContainer = document.querySelector('#rulesContainer');
 let alertContainer = document.querySelector('#alertContainer');
 let submitContainer = document.querySelector('#submitContainer');
-let quizContainer = document.querySelector('#quizContainer');
+let quizContainer = document.querySelector('.quizContainer');
 let answersContainer = document.querySelector('#answersContainer');
 let displayResult = document.querySelector('#displayResult');
-
+console.log(quizContainer);
 // EventListener for quiz start button
 startQuiz.addEventListener('click', () => {
   let countDown = document.querySelector('#countDownContainer');
