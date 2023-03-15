@@ -56,7 +56,6 @@ const displayQuiz = data => {
     quizContainer.innerHTML = '';
     return;
   }
-  console.log(data);
   data.forEach((quiz, i) => {
     quizContainer.innerHTML += `<div class="m-3 py-3 px-4 shadow-sm rounded">
   <div class="flex items-center">
